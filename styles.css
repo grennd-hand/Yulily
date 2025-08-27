@@ -476,8 +476,13 @@ html {
 /* 确保在小屏幕设备上的表现 */
 @media (max-width: 360px) {
     .nav-title {
-        display: none;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
     }
+}
     
     .section-title {
         font-size: 1.4rem;
